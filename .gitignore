@@ -6,7 +6,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-Day*
+.server_info
 # Editor directories and files
 .idea/
 .vscode/

@@ -30,6 +30,14 @@ Exam-day strategies covering:
 - Verification habits
 - Backup strategies
 
+### [5-Month Extended Study Plan](./5-Month-Study-Plan/Overview.md)
+Comprehensive 5-month preparation plan with:
+- Week-by-week detailed study guides
+- Daily task checklists and exercises
+- Hands-on lab scenarios
+- Progress tracking templates
+- Extended timeline for thorough preparation
+
 ## 🎯 Quick Start
 
 1. **Assess Your Current Level**: If new to Kubernetes, add 2-4 weeks to the schedule for basics
@@ -47,10 +55,17 @@ Exam-day strategies covering:
 
 ## 📈 Getting Started
 
-Begin your CKA journey:
+Choose your path based on your timeline and experience:
+
+### Option 1: 8-Week Intensive Plan
 1. Read the [Training Strategy](./CKA-Training-Strategy.md) to understand the methodology
 2. Follow the [8-Week Schedule](./CKA-Schedule.md) for structured learning
 3. Review [Testing Strategies](./CKA-Testing-Strategies.md) as you approach exam day
+
+### Option 2: 5-Month Extended Plan
+1. Start with the [5-Month Overview](./5-Month-Study-Plan/Overview.md)
+2. Follow the weekly guides for detailed daily tasks
+3. Use the [Progress Tracking](./5-Month-Study-Plan/Progress-Tracking.md) template
 
 ## 💡 Quick Tips
 

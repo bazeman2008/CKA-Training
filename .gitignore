@@ -7,6 +7,7 @@
 ehthumbs.db
 Thumbs.db
 .server_info
+
 # Editor directories and files
 .idea/
 .vscode/
@@ -99,6 +100,8 @@ ansible.log
 .env.*.local
 secrets/
 credentials/
+Pri*
+.obsidian/
 
 # Backup files
 *.bak

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5-Month-Study-Plan/Month-3/Week-9.md",
+                "file": "CKA-Schedule.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week-9"
+              "title": "CKA-Schedule"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5-Month-Study-Plan/Month-3/Week-9.md",
+                "file": "CKA-Schedule.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Week-9"
+              "title": "Backlinks for CKA-Schedule"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5-Month-Study-Plan/Month-3/Week-9.md",
+                "file": "CKA-Schedule.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Week-9"
+              "title": "Outgoing links from CKA-Schedule"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5-Month-Study-Plan/Month-3/Week-9.md",
+                "file": "CKA-Schedule.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Week-9"
+              "title": "Outline of CKA-Schedule"
             }
           }
         ]
@@ -171,6 +171,8 @@
   },
   "active": "40ec719a9f4f23a3",
   "lastOpenFiles": [
+    "5-Month-Study-Plan/Month-1/Week-1.md",
+    "5-Month-Study-Plan/Month-3/Week-9.md",
     "5-Month-Study-Plan/Month-3/Week-10.md",
     "5-Month-Study-Plan/Month-3/Week-11.md",
     "5-Month-Study-Plan/Month-3/Week-12.md",

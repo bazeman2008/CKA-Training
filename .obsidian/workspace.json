@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CKA-Schedule.md",
+                "file": "5-Month-Study-Plan/Month-1/Week-1/Day-5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CKA-Schedule"
+              "title": "Day-5"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CKA-Schedule.md",
+                "file": "5-Month-Study-Plan/Month-1/Week-1/Day-5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for CKA-Schedule"
+              "title": "Backlinks for Day-5"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CKA-Schedule.md",
+                "file": "5-Month-Study-Plan/Month-1/Week-1/Day-5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from CKA-Schedule"
+              "title": "Outgoing links from Day-5"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CKA-Schedule.md",
+                "file": "5-Month-Study-Plan/Month-1/Week-1/Day-5.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of CKA-Schedule"
+              "title": "Outline of Day-5"
             }
           }
         ]
@@ -171,6 +171,13 @@
   },
   "active": "40ec719a9f4f23a3",
   "lastOpenFiles": [
+    "5-Month-Study-Plan/Month-1/Week-1/Day-1.md",
+    "CKA-Schedule.md",
+    "5-Month-Study-Plan/Month-1/Week-1/Day-4.md",
+    "5-Month-Study-Plan/Month-1/Week-1/Day-5.md",
+    "5-Month-Study-Plan/Month-1/Week-1/Day-2.md",
+    "5-Month-Study-Plan/Month-1/Week-1/Day-3.md",
+    "5-Month-Study-Plan/Month-1/Week-1",
     "5-Month-Study-Plan/Month-5/Week-20.md",
     "5-Month-Study-Plan/Month-5/Week-19.md",
     "5-Month-Study-Plan/Month-5/Week-18.md",

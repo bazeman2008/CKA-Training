@@ -1,0 +1,7 @@
+{
+  "remoteURL": "git@github.com:bazeman2008/CKA-Training.git",
+  "gitLocation": "",
+  "syncinterval": 15,
+  "isSyncOnLoad": true,
+  "checkStatusOnLoad": true
+}

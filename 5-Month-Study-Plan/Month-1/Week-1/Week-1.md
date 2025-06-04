@@ -6,10 +6,10 @@ This week focuses on setting up your practice environment and understanding Kube
 ## Daily Tasks
 
 ### Day 1: Linux Setup & CKA Environment (1.5 hours)
-- [ ] Install Linux on 3 VMs
-- [ ] Configure SSH and essential tools
-- [ ] Set up bash aliases: `alias k=kubectl`
-- [ ] Enable kubectl bash completion
+- [x] Install Linux on 3 VMs
+- [x] Configure SSH and essential tools
+- [x] Set up bash aliases: `alias k=kubectl`
+- [x] Enable kubectl bash completion
 
 ### Day 2: Container Runtime Foundation (1.5 hours)
 - [ ] Install Podman and CRI-O

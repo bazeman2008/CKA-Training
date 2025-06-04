@@ -7,19 +7,18 @@ A comprehensive training guide and strategy for passing the Certified Kubernetes
 ### [CKA Training Strategy](./CKA-Training-Strategy.md)
 Complete guide covering:
 - Core training principles and hands-on practice methodology
-- Weekly structured learning path
-- Daily practice routines
-- Resource recommendations
+- Daily practice routines and time management
 - Common pitfalls and how to avoid them
-- Progress tracking methods
+- Final exam preparation tips
 
 ### [CKA Study Schedule](./CKA-Schedule.md)
 Detailed 8-week intensive schedule including:
 - Day-by-day topic breakdown
 - Time allocation guidelines
-- Milestone checkpoints
+- Progress tracking and milestone checkpoints
+- Skills assessment checklists
 - Practice exam schedule
-- Adjustment recommendations
+- Performance benchmarks
 
 ### [CKA Testing Strategies](./CKA-Testing-Strategies.md)
 Exam-day strategies covering:
@@ -46,21 +45,18 @@ Exam-day strategies covering:
 - Access to a Kubernetes cluster for practice
 - 2-3 hours daily for study (minimum)
 
-## 📈 Success Metrics
+## 📈 Getting Started
 
-Track your progress with these indicators:
-- Complete all weekly objectives on schedule
-- Score 80%+ on practice exams by Week 6
-- Finish mock exams with 20+ minutes to spare
-- Feel confident with all exam objectives
+Begin your CKA journey:
+1. Read the [Training Strategy](./CKA-Training-Strategy.md) to understand the methodology
+2. Follow the [8-Week Schedule](./CKA-Schedule.md) for structured learning
+3. Review [Testing Strategies](./CKA-Testing-Strategies.md) as you approach exam day
 
-## 💡 Key Tips
+## 💡 Quick Tips
 
-1. **Practice > Theory**: Hands-on work beats reading
-2. **Time Yourself**: Build speed through repetition
-3. **Use Aliases**: Set up kubectl aliases from day one
-4. **Document Learning**: Keep notes of commands and gotchas
-5. **Join Community**: Connect with others preparing for CKA
+- **Consistency is key**: Even 30 minutes daily practice helps
+- **Focus on hands-on labs**: The exam is 100% practical
+- **Join the community**: Connect with others preparing for CKA
 
 ## 🤝 Contributing
 

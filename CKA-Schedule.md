@@ -1,5 +1,9 @@
 # CKA Study Schedule
 
+> **Related Documents**: 
+> - [CKA-Training-Strategy.md](./CKA-Training-Strategy.md) - Learning methodology and study principles
+> - [CKA-Testing-Strategies.md](./CKA-Testing-Strategies.md) - Exam-day tactics and tips
+
 ## 8-Week Intensive Schedule
 
 This schedule assumes 2-3 hours of daily study time with additional weekend sessions.
@@ -184,27 +188,66 @@ This schedule assumes 2-3 hours of daily study time with additional weekend sess
 - **Saturday**: Practice exam or intensive labs
 - **Sunday**: Review, documentation, and planning
 
-## Milestone Checkpoints
+## Progress Tracking & Milestones
+
+### Weekly Assessment Methods
+- **Time yourself** solving 5 random tasks each week
+- **Track improvement** in speed and accuracy
+- **Identify recurring mistakes** and address them
+- **Adjust focus areas** based on performance
+
+### Skills Progression Checklist
+Track your mastery of each skill area:
+
+#### Foundation Skills
+- [ ] Can create resources imperatively without reference
+- [ ] Understand YAML structure and can edit efficiently
+- [ ] Comfortable with kubectl basic commands
+- [ ] Can navigate Kubernetes documentation quickly
+
+#### Intermediate Skills
+- [ ] Can troubleshoot pod failures effectively
+- [ ] Can configure network policies correctly
+- [ ] Can implement persistent storage solutions
+- [ ] Can manage ConfigMaps and Secrets
+
+#### Advanced Skills
+- [ ] Can perform etcd backup and restore
+- [ ] Can configure RBAC policies
+- [ ] Can troubleshoot cluster components
+- [ ] Can perform cluster upgrades
+
+### Milestone Checkpoints
 
 ### End of Week 2
 - [ ] Comfortable with basic kubectl commands
 - [ ] Can create any basic resource imperatively
 - [ ] Understand pod lifecycle
+- [ ] Complete first mock exam (baseline score)
 
 ### End of Week 4
 - [ ] Networking concepts clear
 - [ ] Can implement network policies
 - [ ] Storage operations smooth
+- [ ] Mock exam score improved by 20%+
 
 ### End of Week 6
 - [ ] RBAC implementation confident
 - [ ] Cluster maintenance procedures memorized
 - [ ] Troubleshooting methodology developed
+- [ ] Scoring 70%+ on mock exams
 
 ### End of Week 8
 - [ ] Consistently finishing mock exams on time
 - [ ] All exam objectives covered
+- [ ] Scoring 80%+ on mock exams
 - [ ] Ready for certification
+
+### Performance Benchmarks
+- **Week 2**: Complete simple tasks in < 5 minutes
+- **Week 4**: Complete medium tasks in < 10 minutes
+- **Week 6**: Complete complex tasks in < 15 minutes
+- **Week 8**: Complete full mock exam in < 1:45 hours
 
 ## Adjustment Guidelines
 

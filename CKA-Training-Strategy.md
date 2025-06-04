@@ -26,31 +26,14 @@ Focus on common exam scenarios:
 - Practice full mock exams under 2-hour time limits
 - Track your speed improvement over time
 
-## Weekly Training Structure
+## Training Timeline
 
-### Week 1-2: Foundation Building
-- Master basic kubectl commands
-- Understand Kubernetes architecture
-- Practice creating pods, deployments, services
-- Learn YAML structure and editing
-
-### Week 3-4: Core Concepts
-- Networking (Services, Ingress, Network Policies)
-- Storage (PV, PVC, StorageClasses)
-- Configuration (ConfigMaps, Secrets)
-- Resource management (requests, limits, quotas)
-
-### Week 5-6: Advanced Topics
-- RBAC and security contexts
-- Scheduling (affinity, taints, tolerations)
-- Logging and monitoring basics
-- Etcd backup and restore
-
-### Week 7-8: Exam Preparation
-- Full-length practice exams
-- Focus on weak areas identified
-- Speed optimization techniques
-- Documentation navigation practice
+For a detailed 8-week training schedule with day-by-day topic breakdown, see [CKA-Schedule.md](./CKA-Schedule.md). The schedule includes:
+- Daily topic assignments
+- Time allocation guidelines
+- Practice exercises
+- Mock exam schedule
+- Milestone checkpoints
 
 ## Daily Practice Routine
 
@@ -69,17 +52,14 @@ Focus on common exam scenarios:
 - Review and understand all mistakes
 - Practice troubleshooting scenarios
 
-## Resource Utilization
+## Practice Environment Setup
 
-### Primary Resources
-1. **Official Kubernetes Documentation** - Your exam bible
-2. **Killer.sh** - CKA simulator (comes with exam purchase)
-3. **Kubernetes the Hard Way** - Deep understanding of components
-
-### Practice Environments
-- Local cluster for unlimited practice
+### Recommended Environments
+- Local cluster for unlimited practice (minikube, kind, or kubeadm)
 - Cloud providers' free tiers for multi-node scenarios
 - Container sandbox environments for quick experiments
+
+For a complete list of learning resources and official documentation links, see the [README](./README.md#-useful-links).
 
 ## Common Pitfalls to Avoid
 
@@ -95,22 +75,13 @@ Focus on common exam scenarios:
 - Service account usage
 - Cluster upgrade procedures
 
-## Progress Tracking
+## Progress Monitoring
 
-### Weekly Assessments
-- Time yourself solving 5 random tasks
-- Track improvement in speed and accuracy
-- Identify recurring mistakes
-- Adjust focus areas accordingly
-
-### Skills Checklist
-Maintain a checklist of all exam objectives:
-- [ ] Can create resources imperatively
-- [ ] Can troubleshoot pod failures
-- [ ] Can configure network policies
-- [ ] Can perform etcd backup
-- [ ] Can configure RBAC
-- [ ] Can troubleshoot cluster components
+For comprehensive progress tracking methods, milestone checkpoints, and skills assessment criteria, refer to [CKA-Schedule.md](./CKA-Schedule.md#milestone-checkpoints). This includes:
+- Weekly assessment criteria
+- Skills progression tracking
+- Performance benchmarks
+- Adjustment recommendations
 
 ## Final Preparation
 

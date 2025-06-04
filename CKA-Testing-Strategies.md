@@ -1,5 +1,7 @@
 # CKA Exam Strategy Guide
 
+> **Prerequisites**: Before implementing these exam strategies, ensure you've completed the training outlined in [CKA-Training-Strategy.md](./CKA-Training-Strategy.md) and followed the study schedule in [CKA-Schedule.md](./CKA-Schedule.md).
+
 ## Time Management Strategy
 
 You have 2 hours for 15-20 tasks worth different point values. **Always check the point values first** - tackle high-value questions early when you're fresh. If you're stuck on a low-value task for more than 5-10 minutes, flag it and move on. You can return to flagged questions if time permits.

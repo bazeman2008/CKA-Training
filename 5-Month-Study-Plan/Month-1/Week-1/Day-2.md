@@ -14,6 +14,25 @@ Install and configure container runtimes to understand the foundation layer that
 ### What You'll Do
 Install both Podman (for container management practice) and CRI-O (Kubernetes-native runtime).
 
+### Why Install Both Podman and CRI-O?
+
+**Important Note:** While both Podman and CRI-O are container runtimes, they serve different purposes in your CKA preparation:
+
+1. **CRI-O** (Required for Kubernetes)
+   - The actual container runtime that Kubernetes will use
+   - Implements the Container Runtime Interface (CRI) for Kubernetes
+   - Manages containers created by Kubernetes pods
+   - Essential for cluster operation
+
+2. **Podman** (Training and Troubleshooting Tool)
+   - Standalone container tool for learning container basics
+   - Helps you understand container concepts before adding Kubernetes complexity
+   - Useful for testing images outside of Kubernetes
+   - Provides direct container access for troubleshooting
+   - Similar commands to Docker, making it familiar for most users
+
+**In Production:** You would typically only install CRI-O for Kubernetes. However, for CKA exam preparation, having Podman provides valuable hands-on container experience and debugging capabilities.
+
 ### Step-by-Step Instructions
 
 #### 1. Install Podman

@@ -43,6 +43,26 @@ ssh-copy-id user@192.168.1.12  # worker-2
 
 ## Container Runtime Installation
 
+### Why Both Podman and CRI-O?
+
+**Important Distinction:** This guide installs both Podman and CRI-O, which might seem redundant since both are container runtimes. Here's why both are included:
+
+1. **CRI-O** (Required for Kubernetes)
+   - The actual container runtime that Kubernetes uses
+   - Implements the Container Runtime Interface (CRI)
+   - Manages all Kubernetes pod containers
+   - Essential for cluster operation
+   - Cannot be used standalone easily
+
+2. **Podman** (Training and Troubleshooting Tool)
+   - Standalone container management tool
+   - Helps learn container concepts before Kubernetes
+   - Useful for testing and debugging images
+   - Provides direct container access outside of Kubernetes
+   - Docker-compatible commands for familiarity
+
+**Production Note:** In a production Kubernetes cluster, you would typically only install CRI-O. Podman is included here specifically for CKA training purposes.
+
 ### Install Podman
 ```bash
 # Rocky Linux 8.5 installation

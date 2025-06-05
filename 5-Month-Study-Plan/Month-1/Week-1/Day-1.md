@@ -91,17 +91,15 @@ ssh user@192.168.1.12 "hostname"
 #### 2. Essential Tools Installation
 ```bash
 # Update system packages
-sudo apt update && sudo apt upgrade -y  # Ubuntu/Debian
-# OR
-sudo dnf update -y  # Rocky Linux/RHEL
+sudo dnf update -y  # Rocky Linux 8.5
 
 # Install essential tools
-sudo apt install -y vim tmux git curl wget htop net-tools  # Ubuntu
-# OR  
-sudo dnf install -y vim tmux git curl wget htop net-tools  # Rocky Linux
+sudo dnf install -y vim tmux git curl wget htop net-tools  # Rocky Linux 8.5
 
 # Install container runtime dependencies
-sudo apt install -y apt-transport-https ca-certificates gnupg lsb-release
+sudo dnf install -y ca-certificates
+# Note: redhat-lsb-core provides lsb-release functionality if needed
+sudo dnf install -y redhat-lsb-core
 ```
 
 ### CKA Exam Connection
@@ -197,9 +195,7 @@ Set up auto-completion for kubectl commands to speed up command entry and reduce
 #### 1. Install bash-completion
 ```bash
 # Install completion package
-sudo apt install -y bash-completion  # Ubuntu
-# OR
-sudo dnf install -y bash-completion  # Rocky Linux
+sudo dnf install -y bash-completion  # Rocky Linux 8.5
 ```
 
 #### 2. Configure kubectl completion
@@ -247,8 +243,10 @@ ip addr show
 ip route show
 
 # Verify firewall rules
-sudo ufw status  # Ubuntu
-sudo firewall-cmd --list-all  # Rocky Linux
+sudo firewall-cmd --list-all  # Rocky Linux 8.5
+# To open ports if needed:
+# sudo firewall-cmd --permanent --add-port=PORT/tcp
+# sudo firewall-cmd --reload
 ```
 
 ### Issue 2: SSH Key Authentication Fails

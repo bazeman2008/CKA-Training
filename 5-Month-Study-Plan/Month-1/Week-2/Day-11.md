@@ -166,7 +166,11 @@ kubectl get pods -l <selector-from-service>
 # Problem: NodePort not accessible from outside
 # Check firewall rules on nodes
 sudo iptables -L | grep <nodeport>
-sudo ufw status | grep <nodeport>
+sudo firewall-cmd --list-ports | grep <nodeport>
+
+# To open NodePort if needed:
+# sudo firewall-cmd --permanent --add-port=<nodeport>/tcp
+# sudo firewall-cmd --reload
 
 # Verify service configuration
 kubectl get service <service-name> -o yaml | grep nodePort

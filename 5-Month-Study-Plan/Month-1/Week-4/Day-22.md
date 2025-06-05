@@ -77,6 +77,12 @@ spec:
 # Create directory on node first
 ssh worker-node-1 "sudo mkdir -p /data/hostpath-pv"
 
+# SELinux configuration for Rocky Linux 8.5
+# Set proper SELinux context for hostPath volumes
+ssh worker-node-1 "sudo semanage fcontext -a -t svirt_sandbox_file_t '/data/hostpath-pv(/.*)?'"
+ssh worker-node-1 "sudo restorecon -Rv /data/hostpath-pv"
+ssh worker-node-1 "ls -laZ /data/hostpath-pv"  # Verify context
+
 # Apply PV
 kubectl apply -f hostpath-pv.yaml
 kubectl get pv hostpath-pv
@@ -510,6 +516,18 @@ kubectl describe pod <pod-name> | grep -A 10 Events
 # - PVC not bound
 # - Volume not available on node
 # - Permission issues
+# - SELinux context issues (Rocky Linux)
+
+# SELinux troubleshooting for Rocky Linux 8.5:
+# Check SELinux denials
+sudo ausearch -m AVC -ts recent | grep volume
+# Temporary test (NOT for production)
+sudo setenforce 0
+# Fix context for hostPath
+sudo chcon -Rt svirt_sandbox_file_t /path/to/volume
+# Make permanent
+sudo semanage fcontext -a -t svirt_sandbox_file_t "/path/to/volume(/.*)?"
+sudo restorecon -Rv /path/to/volume
 ```
 
 ### Issue 2: Storage Capacity Issues

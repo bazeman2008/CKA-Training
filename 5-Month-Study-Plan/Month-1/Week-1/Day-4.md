@@ -18,17 +18,7 @@ Install the essential Kubernetes components needed for cluster creation and mana
 
 #### 1. Add Kubernetes Repository
 ```bash
-# Ubuntu/Debian installation
-sudo apt-get update
-sudo apt-get install -y apt-transport-https ca-certificates curl
-
-# Add Kubernetes signing key
-curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg
-
-# Add Kubernetes repository
-echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-
-# Rocky Linux/RHEL installation
+# Rocky Linux 8.5 installation
 cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
 name=Kubernetes
@@ -42,13 +32,12 @@ EOF
 
 #### 2. Install Kubernetes Components
 ```bash
-# Ubuntu installation
-sudo apt-get update
-sudo apt-get install -y kubelet=1.28.2-00 kubeadm=1.28.2-00 kubectl=1.28.2-00
-sudo apt-mark hold kubelet kubeadm kubectl
-
-# Rocky Linux installation
+# Rocky Linux 8.5 installation
 sudo dnf install -y kubelet-1.28.2 kubeadm-1.28.2 kubectl-1.28.2 --disableexcludes=kubernetes
+
+# Lock versions to prevent accidental upgrades
+sudo dnf install -y yum-plugin-versionlock
+sudo dnf versionlock kubelet kubeadm kubectl
 
 # Enable kubelet service (don't start yet - no cluster)
 sudo systemctl enable kubelet
@@ -77,6 +66,12 @@ net.ipv4.ip_forward                 = 1
 EOF
 
 sudo sysctl --system
+
+# SELinux configuration for Rocky Linux 8.5
+# Check SELinux status
+getenforce
+# For CRI-O with SELinux, ensure proper contexts are set
+# Container runtimes handle SELinux contexts automatically
 ```
 
 #### 4. Verify Installation

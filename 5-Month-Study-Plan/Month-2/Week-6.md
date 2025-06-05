@@ -65,7 +65,7 @@ kubeadm version
 
 # Upgrade control plane
 # 1. Update kubeadm
-apt-get update && apt-get install -y kubeadm=1.XX.X-00
+dnf update && dnf install -y kubeadm-1.XX.X
 
 # 2. Check upgrade plan
 kubeadm upgrade plan
@@ -74,7 +74,7 @@ kubeadm upgrade plan
 kubeadm upgrade apply v1.XX.X
 
 # 4. Upgrade kubelet and kubectl
-apt-get update && apt-get install -y kubelet=1.XX.X-00 kubectl=1.XX.X-00
+dnf update && dnf install -y kubelet-1.XX.X kubectl-1.XX.X
 systemctl daemon-reload
 systemctl restart kubelet
 
@@ -83,13 +83,13 @@ systemctl restart kubelet
 kubectl drain <node-name> --ignore-daemonsets
 
 # 2. On worker node, upgrade kubeadm
-apt-get update && apt-get install -y kubeadm=1.XX.X-00
+dnf update && dnf install -y kubeadm-1.XX.X
 
 # 3. Upgrade node configuration
 kubeadm upgrade node
 
 # 4. Upgrade kubelet and kubectl
-apt-get update && apt-get install -y kubelet=1.XX.X-00 kubectl=1.XX.X-00
+dnf update && dnf install -y kubelet-1.XX.X kubectl-1.XX.X
 systemctl daemon-reload
 systemctl restart kubelet
 

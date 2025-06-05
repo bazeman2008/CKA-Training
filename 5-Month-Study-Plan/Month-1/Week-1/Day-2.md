@@ -18,11 +18,7 @@ Install both Podman (for container management practice) and CRI-O (Kubernetes-na
 
 #### 1. Install Podman
 ```bash
-# Ubuntu installation
-sudo apt update
-sudo apt install -y podman
-
-# Rocky Linux installation
+# Rocky Linux 8.5 installation
 sudo dnf install -y podman
 
 # Verify installation
@@ -32,22 +28,18 @@ podman info
 
 #### 2. Install CRI-O (Kubernetes Container Runtime)
 ```bash
-# Set up CRI-O repository (Ubuntu 20.04/22.04)
-export OS=xUbuntu_20.04  # or xUbuntu_22.04
+# Rocky Linux 8.5 installation
 export VERSION=1.28      # Match with planned Kubernetes version
 
-echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/$OS/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
-echo "deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable:/cri-o:/$VERSION/$OS/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable:cri-o:$VERSION.list
-
-curl -L https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable:cri-o:$VERSION/$OS/Release.key | sudo apt-key add -
-curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/$OS/Release.key | sudo apt-key add -
-
-sudo apt update
-sudo apt install -y cri-o cri-o-runc
-
-# Rocky Linux installation
+# Enable CRI-O module and install
 sudo dnf module enable -y cri-o:$VERSION
 sudo dnf install -y cri-o
+
+# Note: SELinux considerations for Rocky Linux
+# CRI-O works with SELinux enabled, but you may need to:
+# - Check SELinux status: getenforce
+# - For troubleshooting: sudo setenforce 0 (temporary)
+# - For production: Configure proper SELinux contexts
 
 # Start and enable CRI-O
 sudo systemctl daemon-reload

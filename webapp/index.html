@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKA Training - Kubernetes Certification Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-dharmachakra"></i>
+                <span>CKA Training</span>
+            </div>
+            <div class="nav-links">
+                <a href="#overview">Overview</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#weeks">Weekly Plan</a>
+                <a href="#resources">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Master the CKA Exam</h1>
+            <p>Complete 5-Month Training Program for Kubernetes Certification</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">20</span>
+                    <span class="stat-label">Weeks</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Daily Tasks</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Pass Rate</span>
+                </div>
+            </div>
+            <a href="#overview" class="cta-button">Start Learning</a>
+        </div>
+    </header>
+
+    <section id="overview" class="section">
+        <div class="container">
+            <h2>Training Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Structured Plan</h3>
+                    <p>5-month comprehensive training program with daily tasks and weekly assessments</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Hands-On Practice</h3>
+                    <p>Real-world scenarios and practical exercises aligned with exam objectives</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Rocky Linux Ready</h3>
+                    <p>Full compatibility guide for Rocky Linux 8.5 with SELinux configurations</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Exam Focused</h3>
+                    <p>Content directly mapped to CKA exam domains and competencies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="section alt-bg">
+        <div class="container">
+            <h2>5-Month Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>Month 1: Foundation</h3>
+                        <p>Linux setup, Kubernetes architecture, basic operations</p>
+                        <a href="#month1" class="link-arrow">View details →</a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>Month 2: Core Concepts</h3>
+                        <p>Workloads, scheduling, services, and storage</p>
+                        <a href="#month2" class="link-arrow">View details →</a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>Month 3: Advanced Topics</h3>
+                        <p>Security, networking, and cluster administration</p>
+                        <a href="#month3" class="link-arrow">View details →</a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h3>Month 4: Practice & Speed</h3>
+                        <p>Mock exams, troubleshooting scenarios, time management</p>
+                        <a href="#month4" class="link-arrow">View details →</a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h3>Month 5: Final Preparation</h3>
+                        <p>Review, exam strategies, and confidence building</p>
+                        <a href="#month5" class="link-arrow">View details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="weeks" class="section">
+        <div class="container">
+            <h2>Weekly Breakdown</h2>
+            <div class="week-nav">
+                <button class="month-btn active" onclick="showMonth(1)">Month 1</button>
+                <button class="month-btn" onclick="showMonth(2)">Month 2</button>
+                <button class="month-btn" onclick="showMonth(3)">Month 3</button>
+                <button class="month-btn" onclick="showMonth(4)">Month 4</button>
+                <button class="month-btn" onclick="showMonth(5)">Month 5</button>
+            </div>
+            
+            <div id="month1" class="month-content active">
+                <div class="week-grid">
+                    <div class="week-card">
+                        <h3>Week 1: Environment Setup</h3>
+                        <ul>
+                            <li>Day 1: Linux Setup & CKA Environment</li>
+                            <li>Day 2: Container Runtime Foundation</li>
+                            <li>Day 3: Kubernetes Architecture Deep Dive</li>
+                            <li>Day 4: kubectl Installation & Basics</li>
+                            <li>Day 5: First Cluster with kubeadm</li>
+                        </ul>
+                        <a href="/docs/week1" class="week-link">View Week Details</a>
+                    </div>
+                    <div class="week-card">
+                        <h3>Week 2: Core Resources</h3>
+                        <ul>
+                            <li>Day 8: Pods - The Basics</li>
+                            <li>Day 9: Multi-Container Pods</li>
+                            <li>Day 10: Labels, Selectors & Annotations</li>
+                            <li>Day 11: Services Introduction</li>
+                            <li>Day 12: ConfigMaps & Secrets</li>
+                        </ul>
+                        <a href="/docs/week2" class="week-link">View Week Details</a>
+                    </div>
+                    <div class="week-card">
+                        <h3>Week 3: Workload Management</h3>
+                        <ul>
+                            <li>Day 15: Deployments Mastery</li>
+                            <li>Day 16: ReplicaSets & DaemonSets</li>
+                            <li>Day 17: StatefulSets Basics</li>
+                            <li>Day 18: Jobs & CronJobs</li>
+                            <li>Day 19: Resource Management</li>
+                        </ul>
+                        <a href="/docs/week3" class="week-link">View Week Details</a>
+                    </div>
+                    <div class="week-card">
+                        <h3>Week 4: Storage & Assessment</h3>
+                        <ul>
+                            <li>Day 22: Persistent Volumes</li>
+                            <li>Day 23: Volume Types & Storage Classes</li>
+                            <li>Day 24: PVC Troubleshooting</li>
+                            <li>Day 25: First Assessment</li>
+                            <li>Day 26: Review & Gaps</li>
+                        </ul>
+                        <a href="/docs/week4" class="week-link">View Week Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="month2" class="month-content">
+                <div class="week-grid">
+                    <div class="week-card">
+                        <h3>Week 5: Advanced Scheduling</h3>
+                        <p>Node selectors, affinity, taints, tolerations, and manual scheduling</p>
+                    </div>
+                    <div class="week-card">
+                        <h3>Week 6: Cluster Administration</h3>
+                        <p>Node management, upgrades, etcd backup/restore, certificates</p>
+                    </div>
+                    <div class="week-card">
+                        <h3>Week 7: Application Lifecycle</h3>
+                        <p>Rolling updates, rollbacks, scaling, and deployment strategies</p>
+                    </div>
+                    <div class="week-card">
+                        <h3>Week 8: Troubleshooting</h3>
+                        <p>Application failures, control plane issues, and node problems</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional months hidden for brevity -->
+        </div>
+    </section>
+
+    <section id="resources" class="section alt-bg">
+        <div class="container">
+            <h2>Essential Resources</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Rocky Linux Setup Guide</h3>
+                    <p>Complete guide for Rocky Linux 8.5 with all compatible commands</p>
+                    <a href="/rocky-linux-guide" class="resource-link">View Guide</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Testing Strategies</h3>
+                    <p>Exam techniques, time management, and success tips</p>
+                    <a href="/testing-strategies" class="resource-link">View Strategies</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Practice Scenarios</h3>
+                    <p>Real-world problems and solutions for exam preparation</p>
+                    <a href="/practice-scenarios" class="resource-link">View Scenarios</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your learning journey and identify areas for improvement</p>
+                    <a href="/progress" class="resource-link">Track Progress</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CKA Training</h4>
+                    <p>Comprehensive Kubernetes certification preparation</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/docs">Documentation</a></li>
+                        <li><a href="/schedule">Full Schedule</a></li>
+                        <li><a href="/resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <p>Visit us at <strong>CKA.forst.fun</strong></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CKA Training. Built with dedication for Kubernetes excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

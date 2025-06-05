@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  cka-webapp:
+    build: .
+    container_name: cka-training-webapp
+    ports:
+      - "80:80"
+    volumes:
+      - ../5-Month-Study-Plan:/usr/share/nginx/html/docs:ro
+      - ../Rocky-Linux-8.5-Setup-Guide.md:/usr/share/nginx/html/rocky-linux-guide.md:ro
+      - ../CKA-Testing-Strategies.md:/usr/share/nginx/html/testing-strategies.md:ro
+      - ../PracticalSenarioExmp.md:/usr/share/nginx/html/practice-scenarios.md:ro
+      - ../CKA-Schedule.md:/usr/share/nginx/html/schedule.md:ro
+      - ./nginx-logs:/var/log/nginx
+    restart: unless-stopped
+    environment:
+      - NGINX_HOST=CKA.forst.fun
+      - NGINX_PORT=80
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.cka.rule=Host(`CKA.forst.fun`)"
+      - "traefik.http.routers.cka.entrypoints=web"
+      - "traefik.http.services.cka.loadbalancer.server.port=80"
+    networks:
+      - cka-network
+
+networks:
+  cka-network:
+    driver: bridge
